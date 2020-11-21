@@ -6,11 +6,14 @@ const rl = readline.createInterface({
 })
 
 rl.on('line', line => {
-    console.log(line.split(' ').map(r=>Number(r)).reduce((acc,cur) => acc+cur))
-    console.log(line.split(' ').map(r=>Number(r)).reduce((acc,cur) => acc-cur))
-    console.log(line.split(' ').map(r=>Number(r)).reduce((acc,cur) => acc*cur))
-    console.log(line.split(' ').map(r=>Number(r)).reduce((acc,cur) => Math.floor(acc/cur)))
-    console.log(line.split(' ').map(r=>Number(r)).reduce((acc,cur) => acc%cur))
+    const s = line.split(' ')
+    const a = Number(s[0])
+    const b = Number(s[1])
+    console.log(a+b)
+    console.log(a-b)
+    console.log(a*b)
+    console.log(a/b)
+    console.log(a%b)
 
     rl.close()
 }).on('close', () => process.exit())
