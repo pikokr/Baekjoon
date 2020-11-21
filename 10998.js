@@ -1,8 +1,12 @@
-let fs = require('fs');
-let input = fs.readFileSync('/dev/stdin').toString().split(' ');
+const readline = require('readline')
 
-let num = Number(input);
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
 
-for (let i = 1; i <= num; i++) {
-    console.log(i);
-}
+rl.on('line', line => {
+    console.log(line.split(' ').map(r=>Number(r)).reduce((acc,cur) => acc*cur))
+
+    rl.close()
+}).on('close', () => process.exit())
