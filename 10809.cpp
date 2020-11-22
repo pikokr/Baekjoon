@@ -6,7 +6,6 @@ int main() {
     string str;
     cin >> str;
 
-
     int res[26];
 
     for (int i = 97; i < 123; ++i) {
