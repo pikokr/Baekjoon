@@ -1,4 +1,4 @@
-package main.kotlin.boj1271
+package boj1271
 
 fun main() {
     val (a,b) = readLine()!!.split(" ").map { it.toBigInteger() }

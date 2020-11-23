@@ -1,4 +1,4 @@
-package main.kotlin.boj2441
+package boj2441
 
 fun main() {
     val c = readLine()!!.toInt()

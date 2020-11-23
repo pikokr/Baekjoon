@@ -1,4 +1,4 @@
-package main.kotlin.boj1085
+package boj1085
 
 fun main() {
     val (x,y, width, height) = readLine()!!.split(" ").map { it.toInt() }
