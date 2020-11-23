@@ -1,8 +1,8 @@
 package boj2338
 
 fun main() {
-    val a = readLine()!!.toInt()
-    val b = readLine()!!.toInt()
+    val a = readLine()!!.toBigInteger()
+    val b = readLine()!!.toBigInteger()
     println(a+b)
     println(a-b)
     println(a*b)
