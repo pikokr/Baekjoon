@@ -1,4 +1,4 @@
-package boj2163
+package main.kotlin.boj2163
 
 fun main() {
     val (n,m) = readLine()!!.split(" ").map { it.toInt() }

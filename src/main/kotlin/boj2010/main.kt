@@ -1,4 +1,4 @@
-package boj2010
+package main.kotlin.boj2010
 
 fun main() {
     val cnt = readLine()!!.toInt()
